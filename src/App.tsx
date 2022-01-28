@@ -1,24 +1,17 @@
-import { useEffect, useState } from "react";
-
 import "./globals.css";
 import styles from "./App.module.css";
 
 function App() {
-  const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    async function doFetch() {
-      const response = await fetch("/api/hello");
-      const result = await response.json();
-      setMessage(result.message);
-    }
-    doFetch();
-  }, []);
-
   return (
     <div className={styles.app}>
       <header className={styles["app-header"]}>
-        <p className={styles.text}>Welcome to your new project 💥 {message}</p>
+        <h4 className={styles["preline-title"]}>Development x Design</h4>
+        <h1 className={styles.title}>Hi, I’m David!</h1>
+        <p className={styles.intro}>
+          Ready for new challenges to shape digitalization as a Frontend
+          Developer. With a flair for good design, the motivation to learn new
+          things and the interest to develop relevant products together.
+        </p>
       </header>
     </div>
   );
