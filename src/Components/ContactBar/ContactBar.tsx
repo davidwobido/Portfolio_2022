@@ -9,11 +9,15 @@ import Xing from "../../../lib/Icons/Icon_Xing.svg";
 export default function ContactBar() {
   return (
     <div className={styles.bar}>
-      <img src={GitHub} className={styles["contact-icon"]}></img>
-      <img src={LinkedIn} className={styles["contact-icon"]}></img>
-      <img src={Xing} className={styles["contact-icon"]}></img>
-      <img src={Mail} className={styles["contact-icon"]}></img>
-      <img src={Lastfm} className={styles["contact-icon"]}></img>
+      <img src={GitHub} className={styles["contact-icon"]} alt="GitHub"></img>
+      <img
+        src={LinkedIn}
+        className={styles["contact-icon"]}
+        alt="LinkedIn"
+      ></img>
+      <img src={Xing} className={styles["contact-icon"]} alt="Xing"></img>
+      <img src={Mail} className={styles["contact-icon"]} alt="Mail"></img>
+      <img src={Lastfm} className={styles["contact-icon"]} alt="LastFM"></img>
     </div>
   );
 }
