@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import LogoFestivalFilter from "../../../lib/Logos/FF_Logo_small.svg";
+import ProjectImageFF from "../../../lib/Images/FF_Example_Screenshot.png";
 
 export default {
   component: ProjectCard,
@@ -17,6 +18,7 @@ function. The detail pages present information such as e.g. the entire
 line-up, location or price.
 "
     gitLink="https://github.com/davidwobido/festival-filter"
-    projectImage=""
+    projectLink="https://festival-filter.herokuapp.com/"
+    projectImage={ProjectImageFF}
   />
 );
