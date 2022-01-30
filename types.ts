@@ -4,4 +4,5 @@ export type ProjectCardTypes = {
   description: string;
   gitLink: string;
   projectImage: string;
+  projectLink?: string;
 };
