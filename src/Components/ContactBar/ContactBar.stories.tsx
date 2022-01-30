@@ -5,4 +5,4 @@ export default {
   title: "Components/ContactBar",
 };
 
-export const Normal = () => <ContactBar />;
+export const Default = () => <ContactBar />;
