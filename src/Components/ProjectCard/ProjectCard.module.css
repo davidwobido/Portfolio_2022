@@ -1,0 +1,67 @@
+.card {
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: solid 1px var(--color-neutral);
+  border-radius: 2rem;
+  gap: 1.5rem;
+}
+
+.logo {
+  filter: grayscale(1);
+  height: 2rem;
+}
+
+.logo,
+.headline,
+.description,
+.copy {
+  margin-bottom: 1.3rem;
+}
+
+.links-wrapper {
+  margin-top: 3rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.links img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.link {
+  font-size: 0.75rem;
+  position: relative;
+}
+
+.link::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  border-bottom: solid 1px;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  transition: ease-in-out 0.2s;
+}
+
+.link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.column-image {
+  display: flex;
+  justify-content: center;
+  height: 23rem;
+}
+
+.project-image {
+  height: 100%;
+}

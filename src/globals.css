@@ -68,3 +68,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "DM Sans", sans-serif;
 }
+
+a {
+  color: var(--color-secondary);
+  text-decoration: 0;
+}
