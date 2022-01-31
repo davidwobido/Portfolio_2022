@@ -14,5 +14,6 @@ export type JobTypes = {
   end: string;
   position: string;
   tasks: string;
-  clients: string;
+  clients?: string;
+  techstack?: string;
 };
