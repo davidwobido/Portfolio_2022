@@ -13,6 +13,6 @@ export type JobTypes = {
   start: string;
   end: string;
   position: string;
-  jobs: string;
+  tasks: string;
   clients: string;
 };
