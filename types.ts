@@ -7,7 +7,7 @@ export type ProjectCardTypes = {
   projectLink?: string;
 };
 
-export type AccordionTypes = {
+export type JobTypes = {
   company: string;
   location: string;
   start: string;
