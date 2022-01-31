@@ -1,0 +1,67 @@
+.station {
+  border-bottom: solid var(--color-neutral) 1px;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 20% 70% max-content;
+  gap: 1.5rem;
+}
+
+.header:focus {
+  color: var(--color-secondary);
+}
+
+.additional {
+  font-size: 0.8rem;
+}
+
+.untoggle :first-child,
+.toggle :first-child {
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.untoggle {
+  overflow: hidden;
+  transition: height 0.2s ease;
+}
+
+.toggle {
+  transition: height 0.4s ease;
+}
+
+.untoggle p {
+  opacity: 0;
+  transition: 0.8s ease;
+}
+
+.toggle p {
+  opacity: 1;
+  transition: 0.8s ease;
+}
+
+.job {
+  display: flex;
+}
+
+.position {
+  font-weight: 400;
+}
+
+.arrow_toggled,
+.arrow_untoggled {
+  justify-self: center;
+  color: var(--color-secondary);
+  transition: 0.4s ease;
+}
+
+.arrow_untoggled {
+  transform: rotate(0.25turn);
+}
+
+.arrow_toggled {
+  transform: rotate(0.75turn);
+}
