@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import styles from "./Accordion.module.css";
 import { JobTypes } from "../../../types";
 
@@ -10,26 +10,48 @@ function AccordionItem({
   location,
   tasks,
   clients,
+  techstack,
 }: JobTypes) {
   const [clicked, setClicked] = useState(false);
+  const contentEl = useRef<HTMLDivElement>(null);
 
   return (
     <div className={styles.accordion}>
       <section className={styles.station}>
-        <div className={styles.period} onClick={() => setClicked(!clicked)}>
-          <h3>
+        <div
+          style={clicked ? { color: "#1811fe" } : { color: "#1e2635" }}
+          className={styles.header}
+          onClick={() => setClicked(!clicked)}
+        >
+          <h5>
             {start} — {end}
-          </h3>
-          <h3>{company}</h3>
-          <h3>{position}</h3>
-        </div>
-        {clicked ? (
-          <div className={styles.toggle}>
-            <p>{location}</p>
-            <p>{tasks}</p>
-            <p>{clients}</p>
+          </h5>
+          <div className={styles.job}>
+            <h5>{company}:&nbsp;&nbsp;</h5>
+            <h5 className={styles.position}> {position}</h5>
           </div>
-        ) : null}
+          <span
+            className={clicked ? styles.arrow_toggled : styles.arrow_untoggled}
+          >
+            ➞
+          </span>
+        </div>
+
+        <div
+          ref={contentEl}
+          style={
+            clicked && contentEl.current
+              ? { height: contentEl.current.scrollHeight }
+              : { height: "0px" }
+          }
+          className={clicked ? styles.toggle : styles.untoggle}
+        >
+          <p>{tasks}</p>
+          <p className={styles.additional}>{`Location: ${location}`}</p>
+          <p className={styles.additional}>
+            {clients ? `Clients: ${clients}` : `Tech Stack: ${techstack}`}
+          </p>
+        </div>
       </section>
     </div>
   );

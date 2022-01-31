@@ -14,6 +14,7 @@ export default function Accordion() {
           location={item.location}
           tasks={item.tasks}
           clients={item.clients}
+          techstack={item.techstack}
         />
       ))}
     </>
