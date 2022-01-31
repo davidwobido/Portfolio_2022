@@ -1,5 +1,16 @@
 export const Jobs = [
   {
+    company: "Neue Fische",
+    location: "Cologne/Remote",
+    start: "09/’21",
+    end: "12/’21",
+    position: "Trainee Frontend Developer",
+    tasks:
+      "Intensive full-time coding bootcamp with over 540 hours of programming in small groups. Self-development of a web app as a final thesis. ",
+    techstack:
+      "HTML, CSS, JavaScript, Typescript, React, Node.js, Express, MongoDB, GitHub, Heroku, Storybook",
+  },
+  {
     company: "Helder",
     location: "Berlin",
     start: "04/’19",
