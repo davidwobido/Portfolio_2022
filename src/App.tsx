@@ -11,25 +11,29 @@ function App() {
     <div className={styles.app}>
       <header className={styles["app-header"]}>
         <h4 className={styles["preline-title"]}>Development x Design</h4>
-        <h1 className={styles.title}>Hi, I’m David!</h1>
+        <h1 className={styles.title}>Ready for new challenges </h1>
         <p className={styles.intro}>
-          Ready for new challenges to shape digitalization as a Frontend
-          Developer. With a flair for good design, the motivation to learn new
-          things and the interest to develop relevant products together.
+          With a flair for good design, the motivation to learn new things and
+          the interest to develop relevant products together.
         </p>
       </header>
+      <aside>
+        <ContactBar />
+      </aside>
       <main>
-        <section className={styles.about}>
-          <h4>About</h4>
-          <h2>Who am I</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nunc
-            sed pellentesque lectus lacinia. Etiam vel integer placerat
-            phasellus non congue tempor. Fames scelerisque ornare a dui nunc
-            morbi bibendum ipsum, proin. Posuere diam, morbi elementum auctor
-            diam interdum mus.
-          </p>
-          <ContactBar />
+        <section className={styles.frame}>
+          <div className={styles.clients}>
+            <h3>clients</h3>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <div className={styles.technologies}>
+            <h3>technologies</h3>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
         </section>
         <section className={styles.work}>
           <h4>Work</h4>
@@ -48,27 +52,17 @@ line-up, location or price.
             projectImage={ProjectImageFF}
           />
         </section>
-        <section className={styles.frame}>
-          <h2>Frame. Need better headline</h2>
-          <div className={styles.clients}>
-            <h3>clients</h3>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-          <div className={styles.technologies}>
-            <h3>technologies</h3>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-        </section>
+
         <section className={styles.cv}>
           <h4>Stations</h4>
           <h2>Where I Worked</h2>
           <p>
             I studied Communication Design in Mainz (2013–2017) and got a
-            Bachelor of arts. Also I’m a trained media designer.
+            Bachelor of arts. Also I’m a trained media designer. <br />
+            After more than ten years and several stations as a designer, I
+            decided to continue as a frontend developer. I attended a coding
+            bootcamp to build up a knowledge base, which I am now expanding with
+            all my energy and motivation.
           </p>
           <Accordion />
         </section>
