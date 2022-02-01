@@ -1,11 +1,12 @@
 import styles from "./IconBar.module.css";
+import { IconBarTypes } from "../../../types";
 
-function IconBar({ urls, headline }: any) {
+function IconBar({ links, headline }: IconBarTypes) {
   return (
     <div className={styles.wrapper}>
       <h3>{headline}</h3>
       <div className={styles.bar}>
-        {urls.map((icon: string, index: number) => (
+        {links.map((icon: string, index: number) => (
           <img src={icon} key={index} />
         ))}
       </div>
