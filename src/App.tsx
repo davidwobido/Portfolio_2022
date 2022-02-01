@@ -3,8 +3,15 @@ import styles from "./App.module.css";
 import Accordion from "./Components/Accordion/Accordion";
 import ContactBar from "./Components/ContactBar/ContactBar";
 import ProjectCard from "./Components/ProjectCard/ProjectCard";
+import IconBar from "./Components/IconBar/IconBar";
 import LogoFestivalFilter from "../lib/Logos/FF_Logo_small.svg";
 import ProjectImageFF from "../lib/Images/FF_Example_Screenshot.png";
+import LogoBZgA from "../lib/Icons/Clients/LogoBZgA.svg";
+import LogoDCSO from "../lib/Icons/Clients/LogoDCSO.svg";
+import LogoEWE from "../lib/Icons/Clients/LogoEWE.svg";
+import LogoHagloefs from "../lib/Icons/Clients/LogoHagloefs.svg";
+import LogoNB from "../lib/Icons/Clients/LogoNB.svg";
+import LogoNike from "../lib/Icons/Clients/LogoNike.svg";
 
 function App() {
   return (
@@ -21,19 +28,18 @@ function App() {
         <ContactBar />
       </aside>
       <main>
-        <section className={styles.frame}>
-          <div className={styles.clients}>
-            <h3>clients</h3>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-          <div className={styles.technologies}>
-            <h3>technologies</h3>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
+        <section className={styles.technologies}>
+          <IconBar
+            headline="Tech Stack"
+            links={[
+              LogoHagloefs,
+              LogoHagloefs,
+              LogoHagloefs,
+              LogoHagloefs,
+              LogoHagloefs,
+              LogoHagloefs,
+            ]}
+          />{" "}
         </section>
         <section className={styles.work}>
           <h4>Work</h4>
@@ -65,6 +71,17 @@ line-up, location or price.
             all my energy and motivation.
           </p>
           <Accordion />
+          <IconBar
+            headline="Clients"
+            links={[
+              LogoNB,
+              LogoNike,
+              LogoHagloefs,
+              LogoEWE,
+              LogoBZgA,
+              LogoDCSO,
+            ]}
+          />
         </section>
       </main>
     </div>

@@ -17,3 +17,8 @@ export type JobTypes = {
   clients?: string;
   techstack?: string;
 };
+
+export type IconBarTypes = {
+  links: string[];
+  headline: string;
+};
