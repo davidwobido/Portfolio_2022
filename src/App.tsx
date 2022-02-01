@@ -39,7 +39,7 @@ function App() {
               LogoHagloefs,
               LogoHagloefs,
             ]}
-          />{" "}
+          />
         </section>
         <section className={styles.work}>
           <h4>Work</h4>

@@ -39,3 +39,13 @@ main {
   display: grid;
   height: 100%;
 }
+
+main > section {
+  margin-top: 11rem;
+  border-top: solid 1px var(--color-neutral);
+  padding-top: 11rem;
+}
+
+main :first-child {
+  margin-top: 0;
+}
