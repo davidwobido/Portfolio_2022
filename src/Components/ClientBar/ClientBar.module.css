@@ -1,0 +1,10 @@
+.bar {
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.bar img {
+  filter: grayscale();
+}
