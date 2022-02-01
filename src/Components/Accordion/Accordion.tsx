@@ -1,9 +1,9 @@
 import { Jobs } from "../../../lib/Data/data";
 import AccordionItem from "./AccordionItem";
 
-export default function Accordion() {
+export default function Accordion({ ...props }) {
   return (
-    <>
+    <div {...props}>
       {Jobs.map((item, index) => (
         <AccordionItem
           key={index}
@@ -17,6 +17,6 @@ export default function Accordion() {
           techstack={item.techstack}
         />
       ))}
-    </>
+    </div>
   );
 }

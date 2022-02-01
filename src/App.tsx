@@ -62,15 +62,15 @@ line-up, location or price.
         <section className={styles.cv}>
           <h4>Stations</h4>
           <h2>Where I Worked</h2>
-          <p>
+          <p className={styles["copy-intro"]}>
             I studied Communication Design in Mainz (2013–2017) and got a
-            Bachelor of arts. Also I’m a trained media designer. <br />
-            After more than ten years and several stations as a designer, I
-            decided to continue as a frontend developer. I attended a coding
-            bootcamp to build up a knowledge base, which I am now expanding with
-            all my energy and motivation.
+            Bachelor of arts. Also I’m a trained media designer. After more than
+            10 years and several stations as a designer, I decided to continue
+            as a frontend developer. I attended a coding bootcamp to build up a
+            knowledge base, which I am now expanding with all my energy and
+            motivation.
           </p>
-          <Accordion />
+          <Accordion className={styles.accordion} />
           <IconBar
             headline="Clients"
             links={[
