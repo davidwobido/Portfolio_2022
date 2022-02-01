@@ -1,14 +1,38 @@
 .app {
-  max-width: 800px;
+  background-color: var(--color-neutral-grade);
 }
 
 .app-header {
   display: grid;
   align-content: center;
-  color: var(--color-primary);
-  background-color: var(--color-background);
+  color: var(--color-neutral-grade);
   width: 100%;
   height: 100vh;
+  background-color: var(--color-primary);
+}
+
+.app-header * {
+  margin: 0 3rem;
+}
+
+.intro {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.contact-bar {
+  position: fixed;
+  bottom: 1.5rem;
+  width: 20rem;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .text {

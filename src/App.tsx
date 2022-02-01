@@ -19,12 +19,12 @@ function App() {
       <header className={styles["app-header"]}>
         <h4 className={styles["preline-title"]}>Development x Design</h4>
         <h1 className={styles.title}>Ready for new challenges </h1>
-        <p className={styles.intro}>
+        <span className={styles.intro}>
           With a flair for good design, the motivation to learn new things and
           the interest to develop relevant products together.
-        </p>
+        </span>
       </header>
-      <aside>
+      <aside className={styles["contact-bar"]}>
         <ContactBar />
       </aside>
       <main>
