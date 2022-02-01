@@ -14,6 +14,6 @@ export default {
 export const Default = () => (
   <IconBar
     headline="Clients"
-    urls={[LogoNB, LogoNike, LogoHagloefs, LogoEWE, LogoBZgA, LogoDCSO]}
+    links={[LogoNB, LogoNike, LogoHagloefs, LogoEWE, LogoBZgA, LogoDCSO]}
   />
 );
