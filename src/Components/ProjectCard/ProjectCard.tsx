@@ -11,9 +11,10 @@ export default function ProjectCard({
   projectImage,
   gitLink,
   projectLink,
+  ...props
 }: ProjectCardTypes) {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} {...props}>
       <div className={styles["column-text"]}>
         <img className={styles.logo} src={logo} alt="" />
         <h3 className={styles.headline}>{headline}</h3>

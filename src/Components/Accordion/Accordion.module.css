@@ -6,7 +6,7 @@
 
 .header {
   display: grid;
-  grid-template-columns: 20% 70% max-content;
+  grid-template-columns: 25% 65% max-content;
   gap: 1.5rem;
 }
 
@@ -15,13 +15,14 @@
 }
 
 .additional {
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
+  font-weight: 500;
 }
 
 .untoggle :first-child,
 .toggle :first-child {
   font-weight: 500;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
 }
 
 .untoggle {
@@ -41,6 +42,11 @@
 .toggle p {
   opacity: 1;
   transition: 0.8s ease;
+  max-width: 90%;
+}
+
+.toggle .additional {
+  opacity: 0.7;
 }
 
 .job {
@@ -48,7 +54,7 @@
 }
 
 .position {
-  font-weight: 400;
+  opacity: 0.7;
 }
 
 .arrow_toggled,

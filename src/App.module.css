@@ -1,17 +1,81 @@
 .app {
-  max-width: 800px;
+  background-color: var(--color-background);
 }
 
 .app-header {
   display: grid;
   align-content: center;
-  color: var(--color-primary);
-  background-color: var(--color-background);
+  color: var(--color-neutral-grade);
   width: 100%;
   height: 100vh;
+  background-color: var(--color-primary);
+}
+
+.app-header * {
+  margin: 0 3rem;
+}
+
+.intro {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.contact-bar {
+  position: fixed;
+  bottom: 1.5rem;
+  width: 20rem;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .text {
   display: grid;
   height: 100%;
+}
+
+.section-line {
+  width: 1200px;
+  transform: translateX(-100px);
+  border-top: solid 1px var(--color-neutral);
+  margin: 11rem 0;
+}
+
+.about {
+  margin-top: 11rem;
+}
+
+.copy-intro {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.icon-bar {
+  margin-bottom: 2rem;
+}
+
+.headline-design {
+  margin-top: 10rem;
+}
+
+.accordion {
+  margin-bottom: 3rem;
+  border-top: solid var(--color-neutral) 1px;
+}
+
+.accordion h3 {
+  font-size: 1.3rem;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: var(--color-primary);
+  height: 10rem;
 }

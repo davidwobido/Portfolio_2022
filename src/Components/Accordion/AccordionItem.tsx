@@ -23,12 +23,12 @@ function AccordionItem({
           className={styles.header}
           onClick={() => setClicked(!clicked)}
         >
-          <h5>
+          <h3>
             {start} — {end}
-          </h5>
+          </h3>
           <div className={styles.job}>
-            <h5>{company}:&nbsp;&nbsp;</h5>
-            <h5 className={styles.position}> {position}</h5>
+            <h3>{company}:&nbsp;&nbsp;</h3>
+            <h3 className={styles.position}> {position}</h3>
           </div>
           <span
             className={clicked ? styles.arrow_toggled : styles.arrow_untoggled}

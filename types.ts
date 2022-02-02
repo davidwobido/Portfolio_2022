@@ -21,4 +21,5 @@ export type JobTypes = {
 export type IconBarTypes = {
   links: string[];
   headline: string;
+  className?: string;
 };
