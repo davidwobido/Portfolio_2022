@@ -41,6 +41,7 @@ function App() {
             ]}
           />
         </section>
+        <hr className={styles["section-line"]} />
         <section className={styles.work}>
           <h4>Work</h4>
           <h2>Development Projects</h2>
@@ -57,7 +58,51 @@ line-up, location or price.
             projectLink="https://festival-filter.herokuapp.com/"
             projectImage={ProjectImageFF}
           />
+          <ProjectCard
+            logo={LogoFestivalFilter}
+            headline="Festival Filter"
+            description="Find your favourite festivals. Festival Filter calculates a rating for
+the festivals that fit best based on selected genres. There’s an
+overview to see all festivals from the database — including a search
+function. The detail pages present information such as e.g. the entire
+line-up, location or price.
+"
+            gitLink="https://github.com/davidwobido/festival-filter"
+            projectLink="https://festival-filter.herokuapp.com/"
+            projectImage={ProjectImageFF}
+          />
+          <section>
+            <h2 className={styles["headline-design"]}>Design Projects</h2>
+
+            <ProjectCard
+              logo={LogoFestivalFilter}
+              headline="Festival Filter"
+              description="Find your favourite festivals. Festival Filter calculates a rating for
+the festivals that fit best based on selected genres. There’s an
+overview to see all festivals from the database — including a search
+function. The detail pages present information such as e.g. the entire
+line-up, location or price.
+"
+              gitLink="https://github.com/davidwobido/festival-filter"
+              projectLink="https://festival-filter.herokuapp.com/"
+              projectImage={ProjectImageFF}
+            />
+            <ProjectCard
+              logo={LogoFestivalFilter}
+              headline="Festival Filter"
+              description="Find your favourite festivals. Festival Filter calculates a rating for
+the festivals that fit best based on selected genres. There’s an
+overview to see all festivals from the database — including a search
+function. The detail pages present information such as e.g. the entire
+line-up, location or price.
+"
+              gitLink="https://github.com/davidwobido/festival-filter"
+              projectLink="https://festival-filter.herokuapp.com/"
+              projectImage={ProjectImageFF}
+            />
+          </section>
         </section>
+        <hr className={styles["section-line"]} />
 
         <section className={styles.cv}>
           <h4>Stations</h4>
@@ -84,6 +129,10 @@ line-up, location or price.
           />
         </section>
       </main>
+      <footer>
+        <p>David Wobido</p>
+        <a>Legal</a>
+      </footer>
     </div>
   );
 }

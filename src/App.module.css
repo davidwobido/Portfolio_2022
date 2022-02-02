@@ -1,5 +1,5 @@
 .app {
-  background-color: var(--color-neutral-grade);
+  background-color: var(--color-background);
 }
 
 .app-header {
@@ -40,20 +40,25 @@ main {
   height: 100%;
 }
 
-main > section {
-  margin-top: 11rem;
+.section-line {
+  width: 1200px;
+  transform: translateX(-100px);
   border-top: solid 1px var(--color-neutral);
-  padding-top: 11rem;
+  margin: 11rem 0;
 }
 
-main :first-child {
-  margin-top: 0;
+.technologies {
+  margin-top: 11rem;
 }
 
 .copy-intro {
   font-size: 1.3rem;
   margin-bottom: 3rem;
   font-weight: 500;
+}
+
+.headline-design {
+  margin-top: 10rem;
 }
 
 .accordion {
@@ -63,4 +68,10 @@ main :first-child {
 
 .accordion h3 {
   font-size: 1.3rem;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: var(--color-primary);
+  height: 10rem;
 }
