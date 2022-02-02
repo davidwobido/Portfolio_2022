@@ -1,18 +1,99 @@
 .app {
   background-color: var(--color-background);
+  overflow: hidden;
 }
 
 .app-header {
-  display: grid;
-  align-content: center;
-  color: var(--color-neutral-grade);
+  position: relative;
   width: 100%;
   height: 100vh;
+  color: var(--color-neutral-grade);
   background-color: var(--color-primary);
+  display: grid;
+  align-content: center;
 }
 
-.app-header * {
-  margin: 0 3rem;
+.header-text {
+  display: grid;
+  align-self: center;
+  margin: 0 20%;
+  text-align: center;
+  gap: 3rem;
+  transform: translateY(-1.2rem);
+}
+
+.preline-title {
+  font-size: 1.5rem;
+  letter-spacing: 1.4rem;
+}
+
+.title {
+  font-size: 7.5rem;
+  line-height: 8rem;
+}
+
+.image-left,
+.image-right {
+  position: absolute;
+  width: 700px;
+  margin: auto;
+  display: grid;
+  align-self: center;
+  top: 100px;
+  left: 0;
+  right: 0;
+}
+
+.image-left {
+  animation-name: spin-left;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  /* animation-timing-function: ease-in-out; */
+}
+
+.image-right {
+  animation-name: spin-right;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  /* animation-timing-function: ease-in-out; */
+}
+
+@keyframes spin-left {
+  0% {
+    transform: translateX(-175px) rotate(0deg);
+    filter: blur(0.5rem);
+  }
+
+  50% {
+    transform: translateX(-175px) rotate(180deg);
+    filter: blur(10rem);
+  }
+
+  100% {
+    transform: translateX(-175px) rotate(360deg);
+    filter: blur(0.5rem);
+  }
+}
+
+@keyframes spin-right {
+  0% {
+    transform: translateX(175px) rotate(0deg);
+    filter: blur(0.5rem);
+  }
+
+  50% {
+    transform: translateX(175px) rotate(180deg);
+    filter: blur(10rem);
+  }
+
+  100% {
+    transform: translateX(175px) rotate(360deg);
+    filter: blur(0.5rem);
+  }
 }
 
 .intro {

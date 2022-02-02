@@ -45,10 +45,6 @@ p {
   color: var(--color-primary);
 }
 
-h1 {
-  font-size: 5.125rem;
-}
-
 h2 {
   font-size: 3.75rem;
   margin-bottom: 2rem;
