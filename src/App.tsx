@@ -28,8 +28,17 @@ function App() {
         <ContactBar />
       </aside>
       <main>
-        <section className={styles.technologies}>
+        <section className={styles.about}>
+          <h4>David Wobido</h4>
+          <h2>About</h2>
+          <p className={styles["copy-intro"]}>
+            After more than 10 years and several stations as a designer, I
+            decided to continue as a frontend developer. I attended a coding
+            bootcamp to build up a knowledge base, which I am now expanding with
+            all my energy and motivation.
+          </p>
           <IconBar
+            className={styles["icon-bar"]}
             headline="Tech Stack"
             links={[
               LogoHagloefs,
@@ -38,6 +47,17 @@ function App() {
               LogoHagloefs,
               LogoHagloefs,
               LogoHagloefs,
+            ]}
+          />
+          <IconBar
+            headline="Clients"
+            links={[
+              LogoNB,
+              LogoNike,
+              LogoHagloefs,
+              LogoEWE,
+              LogoBZgA,
+              LogoDCSO,
             ]}
           />
         </section>
@@ -116,17 +136,6 @@ line-up, location or price.
             motivation.
           </p>
           <Accordion className={styles.accordion} />
-          <IconBar
-            headline="Clients"
-            links={[
-              LogoNB,
-              LogoNike,
-              LogoHagloefs,
-              LogoEWE,
-              LogoBZgA,
-              LogoDCSO,
-            ]}
-          />
         </section>
       </main>
       <footer>
