@@ -4,8 +4,10 @@ import Accordion from "./Components/Accordion/Accordion";
 import ContactBar from "./Components/ContactBar/ContactBar";
 import ProjectCard from "./Components/ProjectCard/ProjectCard";
 import IconBar from "./Components/IconBar/IconBar";
-import LogoFestivalFilter from "../lib/Logos/FF_Logo_small.svg";
-import ProjectImageFF from "../lib/Images/FF_Example_Screenshot.png";
+import DCSO from "../lib/Images/Portfolio_DCSO_1400x1400.jpg";
+import Fehrenz from "../lib/Images/Portfolio_Fehrenz_1400x1400.jpg";
+import FestivalFilter from "../lib/Images/Portfolio_FestivalFilter_1400x1400.jpg";
+import Wearther from "../lib/Images/Portfolio_Wearther_1400x1400.jpg";
 import LogoBZgA from "../lib/Icons/Clients/LogoBZgA.svg";
 import LogoDCSO from "../lib/Icons/Clients/LogoDCSO.svg";
 import LogoEWE from "../lib/Icons/Clients/LogoEWE.svg";
@@ -75,7 +77,6 @@ function App() {
           <h4>Work</h4>
           <h2>Development Projects</h2>
           <ProjectCard
-            logo={LogoFestivalFilter}
             headline="Festival Filter"
             description="Find your favourite festivals. Festival Filter calculates a rating for
 the festivals that fit best based on selected genres. There’s an
@@ -85,10 +86,9 @@ line-up, location or price.
 "
             gitLink="https://github.com/davidwobido/festival-filter"
             projectLink="https://festival-filter.herokuapp.com/"
-            projectImage={ProjectImageFF}
+            projectImage={FestivalFilter}
           />
           <ProjectCard
-            logo={LogoFestivalFilter}
             headline="Festival Filter"
             description="Find your favourite festivals. Festival Filter calculates a rating for
 the festivals that fit best based on selected genres. There’s an
@@ -98,13 +98,12 @@ line-up, location or price.
 "
             gitLink="https://github.com/davidwobido/festival-filter"
             projectLink="https://festival-filter.herokuapp.com/"
-            projectImage={ProjectImageFF}
+            projectImage={Wearther}
           />
           <section>
             <h2 className={styles["headline-design"]}>Design Projects</h2>
 
             <ProjectCard
-              logo={LogoFestivalFilter}
               headline="Festival Filter"
               description="Find your favourite festivals. Festival Filter calculates a rating for
 the festivals that fit best based on selected genres. There’s an
@@ -114,10 +113,9 @@ line-up, location or price.
 "
               gitLink="https://github.com/davidwobido/festival-filter"
               projectLink="https://festival-filter.herokuapp.com/"
-              projectImage={ProjectImageFF}
+              projectImage={DCSO}
             />
             <ProjectCard
-              logo={LogoFestivalFilter}
               headline="Festival Filter"
               description="Find your favourite festivals. Festival Filter calculates a rating for
 the festivals that fit best based on selected genres. There’s an
@@ -127,7 +125,7 @@ line-up, location or price.
 "
               gitLink="https://github.com/davidwobido/festival-filter"
               projectLink="https://festival-filter.herokuapp.com/"
-              projectImage={ProjectImageFF}
+              projectImage={Fehrenz}
             />
           </section>
         </section>
