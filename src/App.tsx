@@ -19,13 +19,12 @@ function App() {
   return (
     <div className={styles.app}>
       <header className={styles["app-header"]}>
-        <div className={styles["header-content"]}>
-          <h4 className={styles["preline-title"]}>Development x Design</h4>
-          <h1 className={styles.title}>Ready for new challenges </h1>
-          <span className={styles.intro}>
-            With a flair for good design, the motivation to learn new things and
-            the interest to develop relevant products together.
-          </span>
+        <div className={styles["header-text"]}>
+          <h4 className={styles["preline-title"]}>Development &#215; Design</h4>
+          <h1 className={styles.title}>
+            Ready for <br />
+            new challenges
+          </h1>
         </div>
         <div className={styles["header-image"]}>
           <img src={HeaderImageLeft} className={styles["image-left"]} />
@@ -43,7 +42,9 @@ function App() {
             After more than 10 years and several stations as a designer, I
             decided to continue as a frontend developer. I attended a coding
             bootcamp to build up a knowledge base, which I am now expanding with
-            all my energy and motivation.
+            all my energy and motivation. With a flair for good design, the
+            motivation to learn new things and the interest to develop relevant
+            products together.
           </p>
           <IconBar
             className={styles["icon-bar"]}
