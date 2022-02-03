@@ -32,9 +32,9 @@ const list = [
   "Design: Adobe Photoshop, After Effects, Illustrator, InDesign",
 ];
 
-function AboutSection() {
+function AboutSection({ ...props }) {
   return (
-    <div>
+    <div {...props}>
       <h4>David Wobido</h4>
       <h2>About</h2>
       <p className="copy-intro">
