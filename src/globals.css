@@ -82,7 +82,7 @@ a {
   text-decoration: 0;
 }
 
-a::after {
+.linkeffect::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -93,7 +93,7 @@ a::after {
   transition: ease-in-out 0.2s;
 }
 
-a:hover::after {
+.linkeffect:hover::after {
   width: 0%;
   left: 0;
 }
