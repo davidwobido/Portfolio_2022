@@ -1,10 +1,13 @@
 .bar {
   display: flex;
-  height: 7rem;
-  justify-content: center;
-  gap: 3rem;
+
+  /* padding: 1rem 2rem; */
+  flex-wrap: wrap;
 }
 
 .bar img {
+  padding: 0.2rem 1rem;
+  margin: 0.5rem;
   filter: grayscale();
+  height: 7rem;
 }
