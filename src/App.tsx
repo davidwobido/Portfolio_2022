@@ -33,6 +33,7 @@ function App() {
           <img src={HeaderImageRight} className={styles["image-right"]} />
         </div>
       </header>
+
       <main>
         <div className={styles["contact-bar"]}>
           <ContactBar />
