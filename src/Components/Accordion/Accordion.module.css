@@ -85,3 +85,34 @@
 .arrow_toggled {
   transform: rotate(0.75turn);
 }
+
+@media screen and (max-width: 900px) {
+  .header {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content fit-content;
+    gap: 0;
+  }
+
+  .header :first-child {
+    padding-left: 0;
+  }
+
+  .job {
+    display: grid;
+  }
+
+  .arrow_toggled,
+  .arrow_untoggled {
+    display: none;
+  }
+
+  .untoggle p,
+  .toggle p {
+    padding-left: 0;
+  }
+
+  .station:hover {
+    background-color: var(--color-background);
+  }
+}

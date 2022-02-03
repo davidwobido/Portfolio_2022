@@ -21,6 +21,8 @@ function App() {
   return (
     <div className={styles.app}>
       <header className={styles["app-header"]}>
+        <h4 className={styles.name}>David Wobido</h4>
+        <h4 className={styles.description}>Frontend Developer</h4>
         <div className={styles["header-text"]}>
           <h4 className={styles["preline-title"]}>Development &#215; Design</h4>
           <h1 className={styles.title}>
