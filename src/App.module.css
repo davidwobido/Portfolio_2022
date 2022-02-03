@@ -49,8 +49,6 @@
   animation-duration: 3000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-
-  /* animation-timing-function: ease-in-out; */
 }
 
 .image-right {
@@ -58,8 +56,6 @@
   animation-duration: 3000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-
-  /* animation-timing-function: ease-in-out; */
 }
 
 @keyframes spin-left {
@@ -127,7 +123,6 @@ main {
 }
 
 .section-line {
-  /* width: 62.5rem; */
   width: 80rem;
   border-top: solid 1px var(--color-neutral);
   margin: 11rem auto;
@@ -137,19 +132,9 @@ main {
   margin-top: 11rem;
 }
 
-.copy-intro {
-  font-size: 1.3rem;
-  margin-bottom: 3rem;
-  font-weight: 500;
-}
-
 .link-large {
   font-size: 1.5rem;
   position: relative;
-}
-
-.icon-bar {
-  margin-bottom: 2rem;
 }
 
 .headline-design {
