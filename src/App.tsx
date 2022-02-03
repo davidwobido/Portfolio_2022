@@ -1,4 +1,4 @@
-import "./globals.css";
+// import "./globals.css";
 import styles from "./App.module.css";
 import Accordion from "./Components/Accordion/Accordion";
 import ContactBar from "./Components/ContactBar/ContactBar";
