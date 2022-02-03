@@ -1,16 +1,15 @@
 .card {
   margin: 2rem 0;
-  padding: 2.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: solid 1px var(--color-neutral);
   border-radius: 2rem;
   gap: 1.5rem;
+  background-color: var(--color-neutral-background);
+  box-shadow: rgb(0 0 0 / 10%) 0 4px 12px;
 }
 
-.logo {
-  filter: grayscale(1);
-  height: 2rem;
+.column-text {
+  padding: 2.5rem;
 }
 
 .logo,
@@ -60,9 +59,10 @@
 .column-image {
   display: flex;
   justify-content: center;
-  height: 23rem;
+  max-height: 31.25rem;
 }
 
 .project-image {
   height: 100%;
+  border-radius: 0 2rem 2rem 0;
 }
