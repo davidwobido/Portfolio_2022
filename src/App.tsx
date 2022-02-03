@@ -1,4 +1,5 @@
-// import "./globals.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import styles from "./App.module.css";
 import Accordion from "./Components/Accordion/Accordion";
 import ContactBar from "./Components/ContactBar/ContactBar";
@@ -16,8 +17,13 @@ import LogoNB from "../lib/Icons/Clients/LogoNB.svg";
 import LogoNike from "../lib/Icons/Clients/LogoNike.svg";
 import HeaderImageLeft from "../lib/Images/Header_Image_left.svg";
 import HeaderImageRight from "../lib/Images/Header_Image_right.svg";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    Aos.init({});
+  }, []);
+
   return (
     <div className={styles.app}>
       <header className={styles["app-header"]}>
@@ -96,7 +102,7 @@ line-up, location or price.
             projectImage={Wearther}
           />
           <a
-            className={styles["link-large"]}
+            className={`linkeffect ${styles["link-large"]}`}
             href="https://github.com/davidwobido/"
           >
             Find more projects on GitHub
@@ -120,7 +126,10 @@ Done at Helder"
             projectLink="https://www.dr-fehrenz.de/"
             projectImage={Fehrenz}
           />
-          <a className={styles["link-large"]} href="mailto:me@davidwobido.de">
+          <a
+            className={`linkeffect ${styles["link-large"]}`}
+            href="mailto:me@davidwobido.de"
+          >
             Contact me for more projects
           </a>
         </section>
