@@ -25,23 +25,28 @@ export default function ProjectCard({
         <p className={styles.copy}>{description}</p>
         <div className={styles["links-wrapper"]}>
           {gitLink && (
-            <a href={gitLink} className={styles.links}>
+            <div className={styles.links}>
               <img src={IconGitHub} alt="Logo GitHub" />
-              <a className={`linkeffect ${styles.link}`}>Link to Github</a>
-            </a>
+              <a href={gitLink} className={`linkeffect ${styles.link}`}>
+                Link to Github
+              </a>
+            </div>
           )}
           {projectLink && (
-            <a href={projectLink} className={styles.links}>
+            <div className={styles.links}>
               <img src={IconExternal} alt="" />
-              <a className={`linkeffect ${styles.link}`}>Link to Project</a>
-            </a>
+              <a href={projectLink} className={`linkeffect ${styles.link}`}>
+                Link to Project
+              </a>
+            </div>
           )}
           {employerLink && (
-            <a href={employerLink} className={styles.links}>
+            <div className={styles.links}>
               <img src={IconExternal} alt="" />
-
-              <a className={`linkeffect ${styles.link}`}>Done at {employer}</a>
-            </a>
+              <a href={employerLink} className={`linkeffect ${styles.link}`}>
+                Done at {employer}
+              </a>
+            </div>
           )}
         </div>
       </div>
