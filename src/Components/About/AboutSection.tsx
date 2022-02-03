@@ -25,10 +25,7 @@ const list = [
   "Figma",
   "Sketch",
   "Adobe XD",
-  "Adobe Photoshop",
-  "Adobe After Effects",
-  "Adobe Illustrator",
-  "Adobe InDesign",
+  "Design: Adobe Photoshop, After Effects, Illustrator, InDesign",
 ];
 
 function AboutSection({ ...props }) {
@@ -45,6 +42,7 @@ function AboutSection({ ...props }) {
       </p>
       <h3>TechStack</h3>
       <div className={styles.tags}>{list.map((e) => tag(`${e}`))}</div>
+      <p></p>
       <IconBar
         headline="Clients"
         links={[LogoNB, LogoNike, LogoHagloefs, LogoEWE, LogoBZgA, LogoDCSO]}
