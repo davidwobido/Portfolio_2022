@@ -11,6 +11,7 @@
   background-color: var(--color-primary);
   display: grid;
   align-content: center;
+  overflow: hidden;
 }
 
 .header-text {
@@ -35,11 +36,11 @@
 .image-left,
 .image-right {
   position: absolute;
-  width: 700px;
+  width: 48rem;
   margin: auto;
   display: grid;
   align-self: center;
-  top: 100px;
+  top: calc(50vh - 48rem / 2);
   left: 0;
   right: 0;
 }
@@ -105,6 +106,7 @@
   margin: auto;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 
 main {

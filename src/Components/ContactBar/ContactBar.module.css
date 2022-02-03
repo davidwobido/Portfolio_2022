@@ -4,8 +4,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
-  background-color: var(--color-neutral-grade) 50%;
-  z-index: 100;
 }
 
 .bar:first-child {

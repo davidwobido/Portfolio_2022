@@ -79,7 +79,7 @@ body {
 
 a {
   color: var(--color-primary);
-  text-decoration: 0;
+  text-decoration: none;
 }
 
 .linkeffect::after {
