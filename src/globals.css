@@ -97,3 +97,9 @@ a {
   width: 0%;
   left: 0;
 }
+
+.copy-intro {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
