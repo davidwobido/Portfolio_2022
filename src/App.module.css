@@ -138,6 +138,11 @@ main {
   font-weight: 500;
 }
 
+.link-large {
+  font-size: 1.5rem;
+  position: relative;
+}
+
 .icon-bar {
   margin-bottom: 2rem;
 }

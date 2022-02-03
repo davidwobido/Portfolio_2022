@@ -1,5 +1,4 @@
 import ProjectCard from "./ProjectCard";
-import LogoFestivalFilter from "../../../lib/Logos/FF_Logo_small.svg";
 import ProjectImageFF from "../../../lib/Images/FF_Example_Screenshot.png";
 
 export default {
@@ -9,7 +8,6 @@ export default {
 
 export const Default = () => (
   <ProjectCard
-    logo={LogoFestivalFilter}
     headline="Festival Filter"
     description="Find your favourite festivals. Festival Filter calculates a rating for
 the festivals that fit best based on selected genres. There’s an
