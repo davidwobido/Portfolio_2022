@@ -33,16 +33,16 @@ function App() {
           <img src={HeaderImageRight} className={styles["image-right"]} />
         </div>
       </header>
-      <aside className={styles["contact-bar"]}>
-        <ContactBar />
-      </aside>
       <main>
+        <div className={styles["contact-bar"]}>
+          <ContactBar />
+        </div>
         <AboutSection className={styles.about} />
 
         <div className={styles["line-wrapper"]}>
           <hr data-aos="fade-right" className={styles["section-line"]} />
         </div>
-        <section className={styles.work}>
+        <section>
           <h4>Work</h4>
           <h2>Development Projects</h2>
           <ProjectCard
