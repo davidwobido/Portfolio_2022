@@ -2,6 +2,15 @@
   border-bottom: solid var(--color-neutral) 1px;
   padding: 1rem 0;
   cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.station:hover {
+  background-color: var(--color-neutral-grade);
+}
+
+.station:hover h3 {
+  color: var(--color-secondary);
 }
 
 .header {
@@ -10,12 +19,15 @@
   gap: 1.5rem;
 }
 
+.header :first-child {
+  padding-left: 1rem;
+}
+
 .header:focus {
   color: var(--color-secondary);
 }
 
 .additional {
-  /* font-size: 0.8rem; */
   font-weight: 500;
 }
 
@@ -36,13 +48,15 @@
 
 .untoggle p {
   opacity: 0;
-  transition: 0.8s ease;
+  transition: 1s ease;
+  padding-left: 1rem;
 }
 
 .toggle p {
   opacity: 1;
-  transition: 0.8s ease;
+  transition: 1s ease;
   max-width: 90%;
+  padding-left: 1rem;
 }
 
 .toggle .additional {
