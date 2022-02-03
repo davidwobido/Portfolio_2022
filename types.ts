@@ -1,9 +1,11 @@
 export type ProjectCardTypes = {
   headline: string;
   description: string;
-  gitLink: string;
+  gitLink?: string;
   projectImage: string;
   projectLink?: string;
+  employerLink?: string;
+  employer?: string;
 };
 
 export type JobTypes = {
