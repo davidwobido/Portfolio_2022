@@ -50,3 +50,30 @@
   height: 100%;
   border-radius: 0 2rem 2rem 0;
 }
+
+@media screen and (max-width: 900px) {
+  .card {
+    border-radius: 2rem;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content fit-content;
+    gap: 0;
+  }
+
+  .column-text {
+    grid-row: 2 / 3;
+    padding: 1.5rem;
+  }
+
+  .column-image {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    max-height: initial;
+  }
+
+  .project-image {
+    height: auto;
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+  }
+}
