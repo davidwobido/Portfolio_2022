@@ -78,7 +78,9 @@ function App() {
             ]}
           />
         </section>
-        <hr className={styles["section-line"]} />
+        <div className={styles["line-wrapper"]}>
+          <hr data-aos="fade-right" className={styles["section-line"]} />
+        </div>
         <section className={styles.work}>
           <h4>Work</h4>
           <h2>Development Projects</h2>
@@ -133,8 +135,9 @@ Done at Helder"
             Contact me for more projects
           </a>
         </section>
-        <hr className={styles["section-line"]} />
-
+        <div className={styles["line-wrapper"]}>
+          <hr data-aos="fade-right" className={styles["section-line"]} />
+        </div>
         <section className={styles.cv}>
           <h4>Stations</h4>
           <h2>Where I Worked</h2>

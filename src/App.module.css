@@ -112,7 +112,7 @@
 }
 
 main {
-  max-width: 1000px;
+  max-width: 62.5rem;
   margin: auto;
 }
 
@@ -121,11 +121,16 @@ main {
   height: 100%;
 }
 
+.line-wrapper {
+  display: grid;
+  justify-content: center;
+}
+
 .section-line {
-  width: 1200px;
-  transform: translateX(-100px);
+  /* width: 62.5rem; */
+  width: 80rem;
   border-top: solid 1px var(--color-neutral);
-  margin: 11rem 0;
+  margin: 11rem auto;
 }
 
 .about {
