@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import ContactBar from "../../Components/ContactBar/ContactBar";
 import styles from "./Impressum.module.css";
 
 function Impressum() {
@@ -6,6 +8,9 @@ function Impressum() {
       <header className={styles["header"]}>
         <h4 className={styles.name}>David Wobido</h4>
         <h4 className={styles.description}>Frontend Developer</h4>
+        <Link to="/">
+          <h4 className={styles.back}> Back to home</h4>
+        </Link>
         <h1 className={styles.title}>
           Legal Notice/
           <br />
@@ -15,6 +20,9 @@ function Impressum() {
         </h1>
       </header>
       <main>
+        <div className="contact-bar">
+          <ContactBar />
+        </div>
         <section className={styles.impressum}>
           <h2 className={styles["impressum-h2"]}>Impressum</h2>
 

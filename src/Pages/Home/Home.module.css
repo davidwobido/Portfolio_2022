@@ -4,16 +4,6 @@
   margin-top: 1rem;
 }
 
-.contact-bar {
-  position: fixed;
-  bottom: 1.5rem;
-  width: 20rem;
-  margin: auto;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
-
 .text {
   display: grid;
   height: 100%;
@@ -43,8 +33,25 @@
 
 footer {
   margin-top: 4rem;
-  background-color: var(--color-primary);
   height: 10rem;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-background);
+}
+
+footer * {
+  color: var(--color-neutral);
+}
+
+footer :first-child {
+  padding-left: 1rem;
+}
+
+footer :last-child {
+  padding-right: 1rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 900px) {

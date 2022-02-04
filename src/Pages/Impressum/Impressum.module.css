@@ -1,5 +1,9 @@
 .wrapper {
-  overflow: scroll;
+  overflow: hidden;
+}
+
+.wrapper a {
+  text-decoration: underline var(--color-secondary);
 }
 
 .header {
@@ -15,7 +19,8 @@
 }
 
 .name,
-.description {
+.description,
+.back {
   position: fixed;
   top: 1rem;
   z-index: 100;
@@ -27,6 +32,11 @@
 
 .description {
   right: 1rem;
+}
+
+.back {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .title {
@@ -52,11 +62,19 @@
   font-size: 0.8rem;
 }
 
+.impressum {
+  margin-top: 11rem;
+}
+
 @media screen and (max-width: 900px) {
   /* HEADER */
   .name,
   .description {
     font-size: 0.5rem;
+  }
+
+  .back {
+    top: 3rem;
   }
 
   .header-text {
