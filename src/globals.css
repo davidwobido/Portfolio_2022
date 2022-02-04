@@ -109,6 +109,10 @@ a {
   font-weight: 500;
 }
 
+.copy-intro a {
+  text-decoration: underline var(--color-secondary);
+}
+
 .line-wrapper {
   display: grid;
   justify-content: center;

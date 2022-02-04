@@ -35,11 +35,10 @@ function Home() {
           <h2>Development Projects</h2>
           <ProjectCard
             headline="Festival Filter"
-            description="Find your favourite festivals. Festival Filter calculates a rating for
-the festivals that fit best based on selected genres. There’s an
+            description="Festival Filter calculates a rating of the festivals that best fit your favorite genres. There’s an
 overview to see all festivals from the database — including a search
 function. The detail pages present information such as e.g. the entire
-line-up, location or price.
+line-up, location or price. In addition to programming, I was responsible for the design and animations.
 "
             gitLink="https://github.com/davidwobido/festival-filter"
             projectLink="https://festival-filter.herokuapp.com/"
@@ -47,8 +46,7 @@ line-up, location or price.
           />
           <ProjectCard
             headline="Wearther"
-            description="A Weather-App that suggests what to wear and if an umbrella is necessary. Uses two APIs for your location and the weather information. Also you can search for another city.
-"
+            description="A Weather-App that suggests what to wear and if an umbrella is necessary. Uses two APIs for your location and the weather information. You can also search other locations."
             gitLink="https://github.com/davidwobido/Weather-App"
             projectImage={Wearther}
           />
@@ -71,9 +69,7 @@ Done at Helder"
           />
           <ProjectCard
             headline="Dres. Fehrenz"
-            description="The dental practice Dres. Fehrenz received a complete
-              new treatment from the root to the polish. The result is a clean, recognizable corporate design including website, social media templates, office and interior design.
-"
+            description="The dental practice Dres. Fehrenz received a complete new treatment from the root to the polish. The result is a clean, recognizable corporate design including website, social media templates, office and interior design."
             projectLink="https://www.dr-fehrenz.de/"
             projectImage={Fehrenz}
           />
@@ -92,11 +88,10 @@ Done at Helder"
           <h2>Where I Worked</h2>
           <p className="copy-intro">
             I studied Communication Design in Mainz (2013–2017) and got a
-            Bachelor of arts. Also I’m a trained media designer. After more than
-            10 years and several stations as a designer, I decided to continue
-            as a frontend developer. I attended a coding bootcamp to build up a
-            knowledge base, which I am now expanding with all my energy and
-            motivation.
+            Bachelor of arts. Also I’m a trained media designer. After 10 years
+            and several stations as a designer, I completed a web development
+            bootcamp (<a href="https://www.neuefische.de/">Neue Fische</a>) in
+            December 2021. and am now looking for a job as a frontend developer.
           </p>
           <Accordion className={styles.accordion} />
         </section>
