@@ -11,6 +11,7 @@ import DCSO from "../../../lib/Images/Portfolio_DCSO_1400x1400.jpg";
 import Fehrenz from "../../../lib/Images/Portfolio_Fehrenz_1400x1400.jpg";
 import FestivalFilter from "../../../lib/Images/Portfolio_FestivalFilter_1400x1400.jpg";
 import Wearther from "../../../lib/Images/Portfolio_Wearther_1400x1400.jpg";
+import { Link } from "react-router-dom";
 
 function Home() {
   useEffect(() => {
@@ -101,8 +102,14 @@ Done at Helder"
         </section>
       </main>
       <footer>
-        <p>David Wobido</p>
-        <a>Legal</a>
+        <p>© David Wobido</p>
+        <Link to="/legal">
+          Legal Notice/
+          <br />
+          Impressum/
+          <br />
+          DSGVO
+        </Link>
       </footer>
     </div>
   );

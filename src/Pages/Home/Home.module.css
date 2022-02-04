@@ -33,8 +33,25 @@
 
 footer {
   margin-top: 4rem;
-  background-color: var(--color-primary);
   height: 10rem;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-background);
+}
+
+footer * {
+  color: var(--color-neutral);
+}
+
+footer :first-child {
+  padding-left: 1rem;
+}
+
+footer :last-child {
+  padding-right: 1rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 900px) {
