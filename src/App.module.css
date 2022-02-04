@@ -3,11 +3,6 @@
   overflow: hidden;
 }
 
-main {
-  max-width: 56.25rem;
-  margin: auto;
-}
-
 /* HEADER */
 
 .app-header {
@@ -135,17 +130,6 @@ main {
 .text {
   display: grid;
   height: 100%;
-}
-
-.line-wrapper {
-  display: grid;
-  justify-content: center;
-}
-
-.section-line {
-  width: 80rem;
-  border-top: solid 1px var(--color-neutral);
-  margin: 11rem auto;
 }
 
 .about {

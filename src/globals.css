@@ -25,6 +25,11 @@
   (regular, medium, bold) */
 }
 
+main {
+  max-width: 56.25rem;
+  margin: auto;
+}
+
 h1,
 h2,
 h3,
@@ -103,6 +108,18 @@ a {
   margin-bottom: 3rem;
   font-weight: 500;
 }
+
+.line-wrapper {
+  display: grid;
+  justify-content: center;
+}
+
+.section-line {
+  width: 80rem;
+  border-top: solid 1px var(--color-neutral);
+  margin: 11rem auto;
+}
+
 @media screen and (max-width: 900px) {
   h2 {
     font-size: 2.5rem;
