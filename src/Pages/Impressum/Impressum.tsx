@@ -4,7 +4,11 @@ function Impressum() {
   return (
     <div className={styles.wrapper}>
       <header className={styles["header"]}>
+        <h4 className={styles.name}>David Wobido</h4>
+        <h4 className={styles.description}>Frontend Developer</h4>
         <h1 className={styles.title}>
+          Legal Notice/
+          <br />
           Impressum/
           <br />
           DSGVO

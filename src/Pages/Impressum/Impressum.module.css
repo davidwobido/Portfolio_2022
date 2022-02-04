@@ -14,6 +14,21 @@
   text-align: center;
 }
 
+.name,
+.description {
+  position: fixed;
+  top: 1rem;
+  z-index: 100;
+}
+
+.name {
+  left: 1rem;
+}
+
+.description {
+  right: 1rem;
+}
+
 .title {
   font-size: 7.5rem;
   line-height: 8rem;
@@ -51,7 +66,7 @@
   }
 
   .title {
-    font-size: 3.5rem;
-    line-height: 4rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
