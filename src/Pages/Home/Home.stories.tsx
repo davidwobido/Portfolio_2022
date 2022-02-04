@@ -2,7 +2,7 @@ import Home from "./Home";
 
 export default {
   component: Home,
-  title: "Components/Home",
+  title: "Pages/Home",
 };
 
 export const Default = () => <Home />;
