@@ -1,0 +1,72 @@
+.intro {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.contact-bar {
+  position: fixed;
+  bottom: 1.5rem;
+  width: 20rem;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.text {
+  display: grid;
+  height: 100%;
+}
+
+.about {
+  margin-top: 11rem;
+}
+
+.link-large {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.headline-design {
+  margin-top: 10rem;
+}
+
+.accordion {
+  margin-bottom: 3rem;
+  border-top: solid var(--color-neutral) 1px;
+}
+
+.accordion h3 {
+  font-size: 1.3rem;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: var(--color-primary);
+  height: 10rem;
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+    margin-top: 5rem;
+  }
+
+  main {
+    margin: 0 1.5rem;
+  }
+
+  .link-large {
+    font-size: 1.25rem;
+    position: relative;
+  }
+
+  .section-line {
+    border-top: solid 1px var(--color-neutral);
+    margin: 5rem auto;
+  }
+
+  .headline-design {
+    margin-top: 5rem;
+  }
+}
