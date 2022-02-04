@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import styles from "./App.module.css";
@@ -5,13 +6,11 @@ import Accordion from "./Components/Accordion/Accordion";
 import ContactBar from "./Components/ContactBar/ContactBar";
 import ProjectCard from "./Components/ProjectCard/ProjectCard";
 import AboutSection from "./Components/About/AboutSection";
-import HeaderImageLeft from "../lib/Images/Header_Image_left.svg";
-import HeaderImageRight from "../lib/Images/Header_Image_right.svg";
+import Header from "./Components/Header/Header";
 import DCSO from "../lib/Images/Portfolio_DCSO_1400x1400.jpg";
 import Fehrenz from "../lib/Images/Portfolio_Fehrenz_1400x1400.jpg";
 import FestivalFilter from "../lib/Images/Portfolio_FestivalFilter_1400x1400.jpg";
 import Wearther from "../lib/Images/Portfolio_Wearther_1400x1400.jpg";
-import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
@@ -20,22 +19,7 @@ function App() {
 
   return (
     <div className={styles.app}>
-      <header className={styles["app-header"]}>
-        <h4 className={styles.name}>David Wobido</h4>
-        <h4 className={styles.description}>Frontend Developer</h4>
-        <div className={styles["header-text"]}>
-          <h4 className={styles["preline-title"]}>Development &#215; Design</h4>
-          <h1 className={styles.title}>
-            Ready for <br />
-            new challenges
-          </h1>
-        </div>
-        <div className={styles["header-image"]}>
-          <img src={HeaderImageLeft} className={styles["image-left"]} />
-          <img src={HeaderImageRight} className={styles["image-right"]} />
-        </div>
-      </header>
-
+      <Header />
       <main>
         <div className={styles["contact-bar"]}>
           <ContactBar />

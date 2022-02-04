@@ -1,0 +1,139 @@
+.app-header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: var(--color-neutral-grade);
+  background-color: var(--color-primary);
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+}
+
+.name,
+.description {
+  position: fixed;
+  top: 1rem;
+  z-index: 100;
+}
+
+.name {
+  left: 1rem;
+}
+
+.description {
+  right: 1rem;
+}
+
+.header-text {
+  display: grid;
+  align-self: center;
+  text-align: center;
+  gap: 3rem;
+  transform: translateY(-1.2rem);
+}
+
+.preline-title {
+  font-size: 1.5rem;
+  letter-spacing: 1.4rem;
+}
+
+.title {
+  font-size: 7.5rem;
+  line-height: 8rem;
+}
+
+.image-left,
+.image-right {
+  position: absolute;
+  width: 48rem;
+  margin: auto;
+  display: grid;
+  align-self: center;
+  top: calc(50vh - 48rem / 2);
+  left: 0;
+  right: 0;
+}
+
+.image-left {
+  animation-name: spin-left;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.image-right {
+  animation-name: spin-right;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin-left {
+  0% {
+    transform: translateX(-25%) rotate(0deg);
+    filter: blur(0.5rem);
+  }
+
+  50% {
+    transform: translateX(-25%) rotate(180deg);
+    filter: blur(10rem);
+  }
+
+  100% {
+    transform: translateX(-25%) rotate(360deg);
+    filter: blur(0.5rem);
+  }
+}
+
+@keyframes spin-right {
+  0% {
+    transform: translateX(25%) rotate(0deg);
+    filter: blur(0.5rem);
+  }
+
+  50% {
+    transform: translateX(25%) rotate(180deg);
+    filter: blur(10rem);
+  }
+
+  100% {
+    transform: translateX(25%) rotate(360deg);
+    filter: blur(0.5rem);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .name,
+  .description {
+    font-size: 0.5rem;
+  }
+
+  .header-text {
+    display: grid;
+    align-self: center;
+    text-align: center;
+    gap: 2rem;
+    transform: translateY(-1.2rem);
+  }
+
+  .preline-title {
+    font-size: 0.8rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .image-left,
+  .image-right {
+    width: 20rem;
+    margin: auto;
+    display: grid;
+    align-self: center;
+    top: calc(50vh - 20rem / 2);
+    left: 0;
+    right: 0;
+  }
+}
