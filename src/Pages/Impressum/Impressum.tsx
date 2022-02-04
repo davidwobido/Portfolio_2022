@@ -6,7 +6,9 @@ function Impressum() {
   return (
     <div className={styles.wrapper}>
       <header className={styles["header"]}>
-        <h4 className={styles.name}>David Wobido</h4>
+        <Link to="/">
+          <h4 className={styles.name}>David Wobido</h4>
+        </Link>
         <h4 className={styles.description}>Frontend Developer</h4>
         <Link to="/">
           <h4 className={styles.back}> Back to home</h4>
@@ -991,20 +993,26 @@ function Impressum() {
               Übermitteln oder das Löschen.
             </li>
           </ul>
-          <p>
-            <a
-              href="https://datenschutz-generator.de/"
-              title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken."
-              rel="noopener noreferrer nofollow"
-            >
-              <img
-                src="https://datenschutz-generator.de/wp-content/plugins/ts-dsg/images/dsg-seal/dsg-seal-pp-de.png"
-                alt="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken."
-                width="250"
-                height="250"
-              />
-            </a>
-          </p>
+          <div className={styles.links}>
+            <p>
+              <a
+                href="https://datenschutz-generator.de/"
+                title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken."
+                rel="noopener noreferrer nofollow"
+              >
+                <img
+                  src="https://datenschutz-generator.de/wp-content/plugins/ts-dsg/images/dsg-seal/dsg-seal-pp-de.png"
+                  alt="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken."
+                  width="250"
+                  height="250"
+                  className={styles["link-schwenke"]}
+                />
+              </a>
+            </p>
+            <Link to="/">
+              <button className={styles["btn-home"]}>Back to home</button>
+            </Link>
+          </div>
         </section>
       </main>
     </div>

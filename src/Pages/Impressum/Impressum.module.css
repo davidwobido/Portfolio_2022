@@ -66,6 +66,33 @@
   margin-top: 11rem;
 }
 
+.links {
+  margin: 0.5rem 0 8rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 8rem;
+}
+
+.btn-home {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  text-decoration: 0;
+  border: var(--color-secondary) solid 1px;
+  color: var(--color-secondary);
+  background: none;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.link-schwenke {
+  width: 5rem;
+  height: 100%;
+}
+
 @media screen and (max-width: 900px) {
   /* HEADER */
   .name,
