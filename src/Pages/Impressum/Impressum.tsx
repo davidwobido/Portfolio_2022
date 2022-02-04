@@ -1,3 +1,4 @@
+import ContactBar from "../../Components/ContactBar/ContactBar";
 import styles from "./Impressum.module.css";
 
 function Impressum() {
@@ -15,6 +16,9 @@ function Impressum() {
         </h1>
       </header>
       <main>
+        <div className="contact-bar">
+          <ContactBar />
+        </div>
         <section className={styles.impressum}>
           <h2 className={styles["impressum-h2"]}>Impressum</h2>
 

@@ -21,7 +21,7 @@ function Home() {
     <div className={styles.app}>
       <Header />
       <main>
-        <div className={styles["contact-bar"]}>
+        <div className="contact-bar">
           <ContactBar />
         </div>
         <AboutSection className={styles.about} />
