@@ -45,9 +45,9 @@
 .scroll-text {
   position: absolute;
   left: 50%;
-  bottom: 8.7rem;
+  bottom: 4rem;
   transform: translateX(-50%);
-  opacity: 0.3;
+  opacity: 0.8;
   font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -56,7 +56,7 @@
 .scroll-animation {
   position: absolute;
   left: 50%;
-  bottom: 6rem;
+  bottom: 1rem;
 }
 
 .scroll-animation::before,
@@ -98,7 +98,7 @@
   }
 
   50% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
   100% {
@@ -178,7 +178,7 @@
     align-self: center;
     text-align: center;
     gap: 2rem;
-    transform: translateY(-1.2rem);
+    transform: translateY(-3rem);
   }
 
   .preline-title {
@@ -189,6 +189,16 @@
   .title {
     font-size: 3.5rem;
     line-height: 4rem;
+  }
+
+  .scroll-text {
+    bottom: 11rem;
+  }
+
+  .scroll-animation {
+    position: absolute;
+    left: 50%;
+    bottom: 8rem;
   }
 
   .image-left,

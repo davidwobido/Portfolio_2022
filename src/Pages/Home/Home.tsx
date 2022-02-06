@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import styles from "./Home.module.css";
@@ -14,17 +14,25 @@ import Wearther from "../../../lib/Images/Portfolio_Wearther_1400x1400.jpg";
 import { Link } from "react-router-dom";
 
 function Home() {
+  const [showContactBar, setShowContactBar] = useState(false);
+
   useEffect(() => {
     Aos.init({});
   }, []);
+
+  setTimeout(() => {
+    setShowContactBar(true);
+  }, 3005);
 
   return (
     <div className={styles.app}>
       <Header />
       <main>
-        <div className="contact-bar">
-          <ContactBar />
-        </div>
+        {showContactBar && (
+          <div className="contact-bar">
+            <ContactBar />
+          </div>
+        )}
         <AboutSection className={styles.about} />
 
         <div className="line-wrapper">
