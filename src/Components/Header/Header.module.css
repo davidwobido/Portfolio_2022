@@ -178,7 +178,7 @@
     align-self: center;
     text-align: center;
     gap: 2rem;
-    transform: translateY(-1.2rem);
+    transform: translateY(-3rem);
   }
 
   .preline-title {
@@ -189,6 +189,16 @@
   .title {
     font-size: 3.5rem;
     line-height: 4rem;
+  }
+
+  .scroll-text {
+    bottom: 11rem;
+  }
+
+  .scroll-animation {
+    position: absolute;
+    left: 50%;
+    bottom: 8rem;
   }
 
   .image-left,
