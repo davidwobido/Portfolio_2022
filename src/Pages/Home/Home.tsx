@@ -35,8 +35,8 @@ function Home() {
           <h2>Development Projects</h2>
           <ProjectCard
             headline="Festival Filter"
-            description="Festival Filter calculates a rating of the festivals that best fit your favorite genres. There’s an
-overview to see all festivals from the database — including a search
+            description="Festival Filter calculates a rating for your favorite festivals depending on the selected genres. There’s an
+overview to see all festivals from the database including a search
 function. The detail pages present information such as e.g. the entire
 line-up, location or price. In addition to programming, I was responsible for the design and animations.
 "
@@ -46,7 +46,7 @@ line-up, location or price. In addition to programming, I was responsible for th
           />
           <ProjectCard
             headline="Wearther"
-            description="A Weather-App that suggests what to wear and if an umbrella is necessary. Uses two APIs for your location and the weather information. You can also search other locations."
+            description="A Weather-App that suggests what to wear and if an umbrella is necessary. Uses two APIs for your location and the weather information. You can also search other locations. I did the programming and design."
             gitLink="https://github.com/davidwobido/Weather-App"
             projectImage={Wearther}
           />
@@ -61,7 +61,7 @@ line-up, location or price. In addition to programming, I was responsible for th
           <ProjectCard
             headline="DCSO"
             description="As cybercrime grows, so does the demand for security. The DCSO offers a community in which experts from various companies, authorities and institutions exchange information in order to derive an efficient defense. Visually, this idea is represented by the Dome, which is formed by the squares coming together – the community.
-Done at Helder"
+Done at Helder."
             employer="Helder"
             employerLink="https://helder.design/"
             projectLink="https://www.dcso.de/"
@@ -87,11 +87,13 @@ Done at Helder"
           <h4>Stations</h4>
           <h2>Where I Worked</h2>
           <p className="copy-intro">
-            I studied Communication Design in Mainz (2013–2017) and got a
-            Bachelor of arts. Also I’m a trained media designer. After 10 years
-            and several stations as a designer, I completed a web development
-            bootcamp (<a href="https://www.neuefische.de/">Neue Fische</a>) in
-            December 2021. and am now looking for a job as a frontend developer.
+            I recently finished a web development bootcamp at&nbsp;
+            <a href="https://www.neuefische.de/">Neue Fische</a>. From 2013 to
+            2017, I studied Communication Design in Mainz (Bachelor of Arts)
+            with a focus on conception and typography. During and after that, I
+            worked in various agencies and as a freelancer. I am also a trained
+            Media Designer. I am currently looking for a job as a (Junior)
+            Frontend Developer.
           </p>
           <Accordion className={styles.accordion} />
         </section>
