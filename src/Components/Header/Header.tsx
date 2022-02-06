@@ -1,8 +1,15 @@
 import styles from "./Header.module.css";
 import HeaderImageLeft from "../../../lib/Images/Header_Image_left.svg";
 import HeaderImageRight from "../../../lib/Images/Header_Image_right.svg";
+import { useState } from "react";
 
 function Header() {
+  const [scrollDown, setScrollDown] = useState(false);
+
+  setTimeout(() => {
+    setScrollDown(true);
+  }, 2000);
+
   return (
     <>
       <header className={styles["app-header"]}>
@@ -19,6 +26,12 @@ function Header() {
           <img src={HeaderImageLeft} className={styles["image-left"]} />
           <img src={HeaderImageRight} className={styles["image-right"]} />
         </div>
+        {scrollDown && (
+          <div className={styles.scroll}>
+            <span className={styles["scroll-text"]}>Scroll down</span>
+            <div className={styles["scroll-animation"]} />
+          </div>
+        )}
       </header>
     </>
   );
