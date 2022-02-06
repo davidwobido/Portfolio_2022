@@ -4,11 +4,11 @@ import HeaderImageRight from "../../../lib/Images/Header_Image_right.svg";
 import { useState } from "react";
 
 function Header() {
-  const [scrollDown, setScrollDown] = useState(false);
+  const [scrollDown, setScrollDown] = useState(true);
 
   setTimeout(() => {
-    setScrollDown(true);
-  }, 2000);
+    setScrollDown(false);
+  }, 3000);
 
   return (
     <>
