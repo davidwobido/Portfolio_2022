@@ -1,6 +1,8 @@
-# App Template
+# Portfolio 
 
-## This template contains:
+This project uses this [template](https://github.com/davidwobido/template)
+
+## This project contains:
 
 - TypeScript
 - React
@@ -42,16 +44,11 @@ The default PORTS are:
 You can also run them with individually:
 
 ```shell
-npm run server:dev
-npm run client:dev
+npm run dev-sever
+npm run dev-client
 npm run storybook
 ```
 
-You can configure the server port by setting the `PORT` environment variable. Creating a `.env` file is supported. You can copy `.env.example` to `.env`.
-
-| KEY  | VALUE                                                         |
-| ---- | ------------------------------------------------------------- |
-| PORT | (Optional) Port for the server environment (defaults to 3001) |
 
 ## Building
 
